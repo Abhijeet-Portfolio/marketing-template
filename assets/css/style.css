@@ -114,9 +114,15 @@ header ul {
   width: 80%;
   padding: 15px 0;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header li a {
@@ -140,12 +146,16 @@ header li:last-child::before {
 header .wrapper > div { 
   width: 96.9%;
   margin: 80px auto 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+        align-items: center;
 }
-
-header span { text-indent: -9999px;}
 
 /*=================================
   Header styling ends here
@@ -158,15 +168,27 @@ header span { text-indent: -9999px;}
 /* slider section start */
 
 .slider-image { overflow: hidden;}
-.slider-image ul { display: flex;}
+
+.slider-image ul { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;
+}
+
 .slider-image li { min-width: 100%;}
 
 .slider-control { 
   padding: 10px 1.5%;
   background-color: #616161;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+        align-items: center;
 }
 
 .slider-control > a { text-indent: -9999px;}
@@ -199,10 +221,15 @@ header span { text-indent: -9999px;}
   text-align: center;
 }
 
-.we-offer ul { display: flex;}
+.we-offer ul { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;
+}
 
 .we-offer li {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 41px 1.7% 38px;
 }
 
@@ -249,8 +276,12 @@ header span { text-indent: -9999px;}
 
 .plans {
   margin: 105px 0 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .plan {
@@ -320,12 +351,17 @@ header span { text-indent: -9999px;}
 }
 
 .we-are ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .we-are li {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 32.3%;
   border: 1px solid #d5d5d5;
 }
@@ -350,7 +386,8 @@ header span { text-indent: -9999px;}
 }
 
 .we-are a {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 13px 0;
   margin: 10px 4.8% 19px;
   display: block;
@@ -386,7 +423,8 @@ form label {
 }
 
 form input {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 14px 1%;
   border: 2px solid #d5d5d5;
@@ -401,7 +439,8 @@ form span {
 }
 
 form button {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   padding: 13px 0;
   border: 1px solid #000000;
@@ -430,7 +469,8 @@ footer {
 footer h3 { font-size: 26px;}
 
 footer .to-top {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 12.8%;
   padding: 15px 0;
   margin: 35px auto;
@@ -450,8 +490,12 @@ footer span::before {
 .social-media {
   width: 14.5%;
   margin: 50px auto 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .social-media a { text-indent: -9999px;}
@@ -524,8 +568,14 @@ footer p a {
 @media only screen and (max-width: 720px) {
 
   .we-offer h2 { width: 32%;}
+
   .we-offer ul,
-  .plans { flex-direction: column;}
+  .plans { 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+  }
 
   .plan { 
     width: 80%;
@@ -533,7 +583,13 @@ footer p a {
   }
 
   .we-are h2{ width: 30%;}
-  .we-are ul { flex-direction: column;}
+
+  .we-are ul { 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+  }
 
   .we-are li { 
     width: 60%;
@@ -550,7 +606,9 @@ footer p a {
 
   header nav ul { 
     position: relative;
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+      justify-content: end;
   }
 
   header nav li { display: none;}
@@ -566,8 +624,13 @@ footer p a {
   }
 
   header .active {
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+      justify-content: center;
   }
 
   header .active li {
