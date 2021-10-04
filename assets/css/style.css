@@ -149,11 +149,37 @@ header span::after {
   main styling starts here
 =================================*/
 
+/* slider section start */
 
+.slider-image { overflow: hidden;}
+.slider-image ul { display: flex;}
+.slider-image li { min-width: 100%;}
 
+.slider-control { 
+  padding: 10px 1.5%;
+  background-color: #616161;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.slider-control > a {
+  text-indent: -9999px;
+}
 
+.slider-control > a::before {
+  color: #ffffff;
+  float: left;
+  font-family: 'fontAwesome';
+  font-size: 32px;
+  text-indent: 0;
+  cursor: pointer;
+}
 
+.slider-control > a:first-child::before { content: '\f0a8';}
+.slider-control > a:last-child::before { content: '\f0a9';}
+
+/* slider section end */
 
 
 /*=================================
