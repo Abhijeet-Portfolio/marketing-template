@@ -244,7 +244,7 @@ header span::after {
 }
 
 .plans {
-  margin-top: 30px;
+  margin: 105px 0 112px;
   display: flex;
   justify-content: space-between;
 }
@@ -302,6 +302,61 @@ header span::after {
 }
 
 /* pricing-plans section end */
+
+/* we-are section start */
+
+.we-are h2 {
+  width: 13.7%;
+  padding-bottom: 18px;
+  border-bottom: 7px solid #cccccc;
+  margin: 0 auto 60px;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.we-are ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.we-are li {
+  box-sizing: border-box;
+  width: 32.3%;
+  border: 1px solid #d5d5d5;
+}
+
+.we-are h3 { 
+  padding: 20px 4.8% 0;
+  font-size: 25px;
+}
+
+.we-are span {
+  padding: 20px 4.8% 14px;
+  display: block;
+  color: #94a5ac;
+  font-size: 18.5px;
+}
+
+.we-are p {
+  padding: 10px 4.8%;
+  color: #68777f;
+  font-size: 18.5px;
+  line-height: 1.4;
+}
+
+.we-are a {
+  box-sizing: border-box;
+  padding: 13px 0;
+  margin: 10px 4.8% 19px;
+  display: block;
+  text-align: center;
+  background-color: #f1f1f1;
+  color: #132d34;
+  font-size: 20px;
+}
+
+/* we-are section end */
 
 /*=================================
   main styling ends here
