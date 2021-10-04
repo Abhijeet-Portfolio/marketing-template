@@ -100,16 +100,45 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 96.9%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+header .wrapper { width: 100%;}
+header nav { background-color: #f1f1f1;}
 
+header ul {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-around;
+}
 
+header li a {
+  color: #0d2138;
+  font-size: 22px;
+}
 
+header .wrapper > div { 
+  width: 96.9%;
+  margin: 80px auto 47px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header span { text-indent: -9999px;}
+
+header span::after {
+  content: '\f0c9';
+  display: none;
+  float: right;
+  font-family: 'fontAwesome';
+  font-size: 20px;
+  text-indent: 0;
+}
 
 
 /*=================================
