@@ -185,7 +185,7 @@ header span::after {
 
 .we-offer { margin: 96px 0 104px;}
 
-h2 {
+.we-offer h2 {
   width: 16.4%;
   padding-bottom: 18px;
   border-bottom: 7px solid #cccccc;
@@ -227,6 +227,81 @@ h2 {
 }
 
 /* we-offer section end */
+
+/* pricing-plans section start */
+
+.pricing-plans h2 {
+  width: 16.4%;
+  margin: 0 auto 30px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.pricing-plans h3 {
+  text-align: center;
+  font-size: 19.1px;
+}
+
+.plans {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan {
+  width: 32.15%;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.plan li { display: block;}
+
+.plan li { 
+  padding: 25px 0 24px;
+  border-top: 1px solid #d3d3d3;
+  color: #181209;
+  font-size: 18px;
+}
+
+.plan .plan-name {
+  padding: 48px 0;
+  border: 0;
+  background-color: #000000;
+  color: #fffffd;
+  font-size: 30px;
+}
+
+.plan .pro { background-color: #616161;}
+.plan span { font-weight: bold;}
+
+.plan .price {
+  color: #b7b5ca;
+  text-transform: lowercase;
+}
+
+.plan .price span {
+  margin: 19px 0 20px;
+  display: block;
+  color: #181209;
+  font-size: 38px;
+  font-weight: normal;
+}
+
+.plan .sign-up {
+  padding: 31px 0 30px;
+  background-color: #f1f1f1;
+}
+
+.plan .sign-up a {
+  padding: 19px 7.5%;
+  background-color: #4caf50;
+  color: #e4f7e4;
+  font-size: 18px;
+}
+
+/* pricing-plans section end */
 
 /*=================================
   main styling ends here
