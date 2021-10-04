@@ -181,6 +181,52 @@ header span::after {
 
 /* slider section end */
 
+/* we-offer section start */
+
+.we-offer { margin: 96px 0 104px;}
+
+h2 {
+  width: 16.4%;
+  padding-bottom: 18px;
+  border-bottom: 7px solid #cccccc;
+  margin: 0 auto 60px;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.we-offer ul { display: flex;}
+
+.we-offer li {
+  box-sizing: border-box;
+  padding: 41px 1.7% 38px;
+}
+
+.we-offer li:first-child { background-color: #f1f1f1;}
+.we-offer li:nth-child(2) { background-color: #bbbbbb;}
+
+.we-offer li:nth-child(3) { 
+  background-color: #616161;
+  color: #fffffe;
+}
+
+.we-offer li:nth-child(4) { 
+  background-color: #000000;
+  color: #fffffe;
+}
+
+.we-offer h3 {
+  margin-bottom: 26px;
+  font-size: 30px;
+}
+
+.we-offer p {
+  padding-right: 4%;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+/* we-offer section end */
 
 /*=================================
   main styling ends here
