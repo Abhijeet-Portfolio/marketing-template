@@ -111,14 +111,30 @@ header .wrapper { width: 100%;}
 header nav { background-color: #f1f1f1;}
 
 header ul {
+  width: 80%;
   padding: 15px 0;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header li a {
   color: #0d2138;
-  font-size: 22px;
+  font-size: 23px;
+}
+
+header li:last-child { 
+  display: none;
+  text-indent: -9999px;
+}
+
+header li:last-child::before {
+  content: '\f0c9';
+  float: right;
+  font-family: 'fontAwesome';
+  font-size: 25px;
+  text-indent: 0;
 }
 
 header .wrapper > div { 
@@ -130,16 +146,6 @@ header .wrapper > div {
 }
 
 header span { text-indent: -9999px;}
-
-header span::after {
-  content: '\f0c9';
-  display: none;
-  float: right;
-  font-family: 'fontAwesome';
-  font-size: 20px;
-  text-indent: 0;
-}
-
 
 /*=================================
   Header styling ends here
@@ -163,9 +169,7 @@ header span::after {
   align-items: center;
 }
 
-.slider-control > a {
-  text-indent: -9999px;
-}
+.slider-control > a { text-indent: -9999px;}
 
 .slider-control > a::before {
   color: #ffffff;
@@ -372,7 +376,7 @@ header span::after {
   text-align: center;
 }
 
-form { margin: 75px 0;}
+form { margin: 75px 0 105px;}
 
 .form-group { padding: 12px 0;}
 
@@ -384,7 +388,7 @@ form label {
 form input {
   box-sizing: border-box;
   width: 100%;
-  padding: 14px 2%;
+  padding: 14px 1%;
   border: 2px solid #d5d5d5;
   margin: 2px 0;
   font-size: 18px;
@@ -417,20 +421,191 @@ form button {
   footer styling starts here
 =================================*/ 
 
+footer {
+  padding: 62px 0 46px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
 
+footer h3 { font-size: 26px;}
 
+footer .to-top {
+  box-sizing: border-box;
+  width: 12.8%;
+  padding: 15px 0;
+  margin: 35px auto;
+  display: block;
+  background-color: #000000;
+  color: #edf6fc;
+  font-size: 19px;
+}
 
+footer span::before {
+  content: '\f062';
+  font-family: 'fontAwesome';
+  margin-right: 11%;
+  color: #ffffff;
+}
 
+.social-media {
+  width: 14.5%;
+  margin: 50px auto 33px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.social-media a { text-indent: -9999px;}
+
+.social-media li a::before {
+  float: right;
+  color: #000000;
+  font-family: 'fontAwesome';
+  font-size: 32px;
+  text-indent: 0;
+}
+
+.social-media li:first-child a::before { content: '\f230';}
+.social-media li:nth-child(2) a::before { content: '\f16d';}
+.social-media li:nth-child(3) a::before { content: '\f2ab';}
+.social-media li:nth-child(4) a::before { content: '\f231';}
+.social-media li:nth-child(5) a::before { content: '\f099';}
+.social-media li:nth-child(6) a::before { content: '\f0e1';}
+
+footer p { font-size: 19px;}
+
+footer p a { 
+  color: #000000;
+  text-decoration: underline;
+}
 
  /*=================================
   footer styling ends here
 =================================*/ 
 
 /*media query starts*/
+/*media query for hover starts here*/
+@media only screen and (min-width: 1024px) {
+
+  header nav a:hover { opacity: 0.6;}
+  .slider-control > a:hover::before { opacity: 0.6;}
+  .plan .sign-up a:hover { opacity: 0.7;}
+  .we-are a:hover { background-color: #aaaaaa;}
+  form button:hover { opacity: 0.6;}
+  footer .to-top:hover { opacity: 0.6;}
+  .social-media li a:hover::before { opacity: 0.6;}
+  footer p a:hover { text-decoration: none;}
+
+}  
+
+/*media query for 1280px starts here*/
+@media only screen and (max-width: 1280px) {
+
+  .we-offer h2 { width: 18%;}
+
+  .we-are h2,
+  .contact h2 { width: 15%;}
+
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+  .we-offer h2 { width: 22%;}
+  .pricing-plans h2 { width: 30%;}
 
+  .we-are h2,
+  .contact h2 { width: 20%;}
 
-}  
+  footer .to-top { width: 20%;}
+  .social-media { width: 25%;}
+}
+
+/*media query for 720px starts here*/
+@media only screen and (max-width: 720px) {
+
+  .we-offer h2 { width: 32%;}
+  .we-offer ul,
+  .plans { flex-direction: column;}
+
+  .plan { 
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .we-are h2{ width: 30%;}
+  .we-are ul { flex-direction: column;}
+
+  .we-are li { 
+    width: 60%;
+    margin: 20px auto;
+  }
+
+  .contact h2 { width: 26%;}
+  footer .to-top { width: 25%;}
+  .social-media { width: 30%;}
+}
+
+/*media query for 425px starts here*/
+@media only screen and (max-width: 520px) {
+
+  header nav ul { 
+    position: relative;
+    justify-content: end;
+  }
+
+  header nav li { display: none;}
+
+  header nav li:last-child { display: block;}
+
+  header nav .active {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;    
+    background-color: #94a5ac;
+  }
+
+  header .active {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header .active li {
+    margin: 20px 0;
+    display: block;
+  }
+
+  header .active li:last-child {
+    position: absolute;
+    top: 0;
+    right: 5%;
+  }
+
+  header .active li:last-child::before { content: '\f00d';}
+
+}
+
+/*media query for 425px starts here*/
+@media only screen and (max-width: 425px) {
+
+  .we-offer h2 { width: 55%;}
+  .pricing-plans h2 { width: 60%;}
+  .we-are h2 { width: 50%;}
+  .we-are li { width: 80%;}
+  .contact h2 { width: 40%;}
+  footer .to-top { width: 40%;}
+  .social-media { width: 50%;}
+
+}
+
+/*media query for 320px starts here*/
+@media only screen and (max-width: 320px) {
+
+  .we-offer h2 { width: 70%;}
+  .we-are h2 { width: 60%;}
+  .plan { width: 95%;}
+  .we-are li { width: 90%;}
+  .contact h2 { width: 50%;}
+  footer .to-top { width: 50%;}
+  .social-media { width: 70%;}
+}
