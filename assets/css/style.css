@@ -638,6 +638,7 @@ footer p a {
   .we-are h2,
   .contact h2 { width: 20%;}
 
+  .successful { width: 40%;}
   footer .to-top { width: 20%;}
   .social-media { width: 25%;}
 }
@@ -675,6 +676,7 @@ footer p a {
   }
 
   .contact h2 { width: 26%;}
+  .successful { width: 50%;}
   footer .to-top { width: 25%;}
   .social-media { width: 30%;}
 }
@@ -734,6 +736,13 @@ footer p a {
   .we-are h2 { width: 50%;}
   .we-are li { width: 80%;}
   .contact h2 { width: 40%;}
+  .successful { width: 80%;}
+
+  .successful h3 { 
+    width: 8%;
+    text-align: center;
+  }
+
   footer .to-top { width: 40%;}
   .social-media { width: 50%;}
 
