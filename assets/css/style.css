@@ -119,10 +119,10 @@ header ul {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+    justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+        align-items: center;
 }
 
 header li a {
@@ -178,7 +178,7 @@ header .wrapper > div {
 .slider-image li { min-width: 100%;}
 
 .slider-control { 
-  padding: 10px 1.5%;
+  padding: 19px 1.5% 18px;
   background-color: #616161;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,6 +204,19 @@ header .wrapper > div {
 
 .slider-control > a:first-child::before { content: '\f0a8';}
 .slider-control > a:last-child::before { content: '\f0a9';}
+.slider-control li a { text-indent: -9999px;}
+.slider-control li { margin: 0 5px;}
+
+.slider-control li a::before {
+  content: '\f096';
+  float: right;
+  color: #fffffd;
+  font-family: 'fontAwesome';
+  font-size: 26px;
+  text-indent: 0;
+}
+
+.slider-control li .active::before { content: '\f0c8';}
 
 /* slider section end */
 
@@ -434,9 +447,14 @@ form input {
 }
 
 form span { 
-  display: none;
   color: #ff2b2b;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
+
+form .display { opacity: 1;}
+form .hide { opacity: 0;}
 
 form button {
   -webkit-box-sizing: border-box;
@@ -448,6 +466,62 @@ form button {
   background-color: #000000;
   color: #cccccc;
   font-size: 18px;
+}
+
+.modal { 
+  width: 100%;
+  min-height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: #000000ce;
+}
+
+.modalShow { display: block;}
+
+.successful {
+  width: 30%;
+  padding: 25px 0 10px;
+  border: 2px solid #949494;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 100px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.successful h3 { 
+  width: 6%;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.successful .success { 
+  text-indent: -9999px;
+  display: block;
+}
+
+.successful .success::after {
+  content: '\f05d';
+  float: right;
+  color: #3fc24a;
+  font-family: 'fontAwesome';
+  font-size: 30px;
+  text-indent: 0;
+}
+
+.successful h4 { text-transform: capitalize;}
+
+.successful a {
+  padding: 7px 5%;
+  border-radius: 5px;
+  margin: 20px auto 5px;
+  background-color: #242424;
+  color: #ffffff;
+  text-transform: capitalize;
 }
 
 /* contact-us section end */
@@ -532,9 +606,12 @@ footer p a {
 
   header nav a:hover { opacity: 0.6;}
   .slider-control > a:hover::before { opacity: 0.6;}
+  .slider-control li:hover a::before { content: '\f0c8';}
   .plan .sign-up a:hover { opacity: 0.7;}
   .we-are a:hover { background-color: #aaaaaa;}
   form button:hover { opacity: 0.6;}
+  .modal .close:hover::after { color: #b7b5ca;}
+  .successful a:hover { background-color: #616161;}
   footer .to-top:hover { opacity: 0.6;}
   .social-media li a:hover::before { opacity: 0.6;}
   footer p a:hover { text-decoration: none;}
@@ -620,7 +697,7 @@ footer p a {
     min-width: 100%;
     position: fixed;
     top: 0;    
-    background-color: #94a5ac;
+    background-color: #cccccc;
   }
 
   header .active {

@@ -21,7 +21,7 @@
     <!--header section start-->
     <header>
       <div class="wrapper">
-        <nav>
+        <nav id="top">
           <ul>
             <li><a href="index.html" title="Home">Home</a></li>
             <li><a href="#FIXME" title="Plans">Plans</a></li>
@@ -43,6 +43,9 @@
         <div class="wrapper">
           <div class="slider-image">
             <ul>
+              <li id="first">
+                <img src="https://via.placeholder.com/1307x596" alt="chair">
+              </li>
               <li>
                 <img src="https://via.placeholder.com/1307x596" alt="desk">
               </li>
@@ -51,6 +54,9 @@
               </li>
               <li>
                 <img src="https://via.placeholder.com/1307x596" alt="chair">
+              </li>
+              <li id="last">
+                <img src="https://via.placeholder.com/1307x596" alt="desk">
               </li>
             </ul>
           </div>
@@ -171,28 +177,35 @@
           <form>
             <div class="form-group">
               <label for="name">Name</label>
-              <span>This field is required!</span>
+              <span class="hide">This field is required!</span>
               <input type="text" id="name" name="name">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <span>This field is required!</span>
+              <span class="hide">This field is required!</span>
               <input type="email" id="email" name="email">
             </div>
             <div class="form-group">
               <label for="subject">Subject</label>
-              <span>This field is required!</span>
+              <span class="hide">This field is required!</span>
               <input type="text" id="subject" name="subject">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <span>This field is required!</span>
+              <span class="hide">This field is required!</span>
               <input type="text" id="message" name="message">
             </div>
             <div class="form-control">
               <button>Send</button>
             </div>
           </form>
+          <div class="modal">
+            <div class="successful">
+              <h3><span class="success">success</span></h3>
+              <h4>your message send successfully</h4>
+              <a href="#FIME" title="close">Ok</a>
+            </div>
+          </div>
         </div>
       </section>
       <!--contact-us section end-->
@@ -203,14 +216,14 @@
     <footer>      
       <div class="wrapper">
         <h3>Footer</h3>
-        <a href="#" title="To The Top" class="to-top"><span>To the top</span></a>
+        <a href="#top" title="To The Top" class="to-top"><span>To the top</span></a>
         <ul class="social-media">
-            <li><a href="#FIXME" title="facebook">facebook</a></li>
-            <li><a href="#FIXME" title="instagram">instagram</a></li>
-            <li><a href="#FIXME" title="snapchat">snapchat</a></li>
-            <li><a href="#FIXME" title="pinterest">pinterest</a></li>
-            <li><a href="#FIXME" title="twitter">twitter</a></li>
-            <li><a href="#FIXME" title="linkedin">linkedin</a></li>
+            <li><a href="#FIXME" rel="nofollow noreferrer" aria-hidden="true" title="facebook">facebook</a></li>
+            <li><a href="#FIXME" rel="nofollow noreferrer" aria-hidden="true" title="instagram">instagram</a></li>
+            <li><a href="#FIXME" rel="nofollow noreferrer" aria-hidden="true" title="snapchat">snapchat</a></li>
+            <li><a href="#FIXME" rel="nofollow noreferrer" aria-hidden="true" title="pinterest">pinterest</a></li>
+            <li><a href="#FIXME" rel="nofollow noreferrer" aria-hidden="true" title="twitter">twitter</a></li>
+            <li><a href="#FIXME" rel="nofollow noreferrer" aria-hidden="true" title="linkedin">linkedin</a></li>
         </ul>
         <p>Powered by <a href="#FIXME" title="w3.css">w3.css</a></p>
       </div>
