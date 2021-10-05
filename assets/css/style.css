@@ -117,6 +117,7 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 500;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
     justify-content: space-between;
